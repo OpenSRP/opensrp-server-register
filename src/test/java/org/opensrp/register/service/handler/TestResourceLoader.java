@@ -34,7 +34,8 @@ public class TestResourceLoader {
 	
     public String getFile() throws IOException {
         ResourceLoader loader = new DefaultResourceLoader();
-        String scheduleConfigFilesPath = "./../assets/schedules/schedule-configs";
+        String scheduleConfigFilesPath = "configs/assets/schedules/schedule-configs";
+
         File scheduleConfigsFolder = null;
         if (scheduleConfigsFolder == null && loader.getResource(scheduleConfigFilesPath).exists())
             scheduleConfigFilesPath = loader.getResource(scheduleConfigFilesPath).getURI().getPath();
