@@ -18,9 +18,7 @@
 		<spring.version>3.1.0.RELEASE</spring.version>
 		<opensrp.updatePolicy>always</opensrp.updatePolicy>
 		<nexus-staging-maven-plugin.version>1.5.1</nexus-staging-maven-plugin.version>
-		<mysql.connector.version>5.1.36</mysql.connector.version>
-		<opensrp.common.version>1.0.0-SNAPSHOT</opensrp.common.version>
-		<opensrp.interface.version>1.0.0-SNAPSHOT</opensrp.interface.version>
+		<opensrp.core.version>1.0.0-SNAPSHOT</opensrp.core.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<jackson.version>1.9.7</jackson.version>
 	</properties>
@@ -122,7 +120,7 @@
 		<dependency>
 			<groupId>org.smartregister</groupId>
 			<artifactId>opensrp-server-core</artifactId>
-			<version>1.0.0-SNAPSHOT</version>
+			<version>${opensrp.core.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
